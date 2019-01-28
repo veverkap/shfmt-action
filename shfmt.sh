@@ -4,6 +4,8 @@ set -e
 cd .
 ls -al
 
+echo "DUD"
+
 # UNFMT_FILES=$(sh -c "shfmt -i 2 -l -d $*" 2>&1)
 # SUCCESS=$?
 # echo "$UNFMT_FILES"
