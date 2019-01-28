@@ -1,8 +1,8 @@
 #!/bin/sh -l
 
-echo "HELLO MY FRIENDS"
+echo "ENVIRONMENT"
 printenv
-echo "DUDE"
+echo "GITHUB FOLDER CONTENTS"
+ls -al /github
+
 cat /github/workflow/event.json
-COMMENTS_URL=$(cat /github/workflow/event.json | jq -r .pull_request.comments_url)
-echo $COMMENTS_URL
