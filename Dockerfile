@@ -19,7 +19,5 @@ RUN apk add --no-cache \
   curl \
   jq
 
-
-COPY shfmt.sh /usr/bin/shfmt
-
-ENTRYPOINT ["shfmt"]
+COPY shfmt.sh /shfmt.sh
+ENTRYPOINT ["/shfmt.sh"]
