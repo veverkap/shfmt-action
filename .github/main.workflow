@@ -7,7 +7,6 @@ action "shfmt" {
   uses = "veverkap/shfmt-action@master"
   secrets = ["GITHUB_TOKEN"]
   env = {
-    MY_NAME = "Mona"
+    TF_ACTION_WORKING_DIR = "."
   }
-  args = "\"Hello world, I'm $MY_NAME!\""
 }

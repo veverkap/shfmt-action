@@ -1,6 +1,7 @@
 #!/bin/sh -l
 
 echo "HELLO MY FRIENDS"
+printenv
 echo "DUDE"
-
-sh -c "echo $*"
+set -e
+echo "$TF_ACTION_WORKING_DIR"
