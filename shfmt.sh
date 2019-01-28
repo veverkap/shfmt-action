@@ -1,14 +1,10 @@
 #!/bin/sh
 set -e
-# cd "${TF_ACTION_WORKING_DIR:-.}"
-cd .
-ls -al
 
-echo "DUD"
-
-# UNFMT_FILES=$(sh -c "shfmt -i 2 -l -d $*" 2>&1)
-# SUCCESS=$?
-# echo "$UNFMT_FILES"
+UNFMT_FILES=$(sh -c "shfmt -i 2 -l -d $*" 2>&1)
+SUCCESS=$?
+echo "$UNFMT_FILES"
+echo "SUCCESS IS $SUCCESS"
 # set -e
 
 # if [ $SUCCESS -eq 0 ]; then
