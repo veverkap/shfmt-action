@@ -3,5 +3,6 @@
 echo "HELLO MY FRIENDS"
 printenv
 echo "DUDE"
-set -e
-echo "$TF_ACTION_WORKING_DIR"
+cat /github/workflow/event.json
+COMMENTS_URL=$(cat /github/workflow/event.json | jq -r .pull_request.comments_url)
+echo $COMMENTS_URL
